@@ -1,0 +1,39 @@
+{
+  "name": "dark-knight",
+  "version": "0.0.1",
+  "description": "A Dark Tower inspired multi-player web application game",
+  "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ttosi/dark-knight.git"
+      },
+   "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "buefy": "^0.7.6",
+    "core-js": "^2.6.5",
+    "node-sass": "^4.12.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "vue-cli": "^2.9.6",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-unit-mocha": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "chai": "^4.1.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "author": "Tony S. Tosi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttosi/dark-knight/issues"
+  },
+  "homepage": "https://github.com/ttosi/dark-knight#readme"
+}
