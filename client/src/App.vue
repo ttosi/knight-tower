@@ -8,7 +8,7 @@
                 <player-card class="has-background-light box"></player-card>
               </div>
               <div class="column is-half">
-                <land-map class="has-background-light box"></land-map>
+                <board class="has-background-light box"></board>
               </div>
               <div class="column">
                 <tower class="has-background-light box"></tower>
@@ -23,7 +23,7 @@
 import SiteHeader from "@/components/Header.vue";
 import Home from "@/components/Home.vue";
 import PlayerCard from "@/components/PlayerCard.vue";
-import LandMap from "@/components/LandMap.vue";
+import Board from "@/components/Board.vue";
 import Tower from "@/components/Tower.vue";
 import SiteFooter from "@/components/Footer.vue";
 
@@ -32,7 +32,7 @@ export default {
         SiteHeader,
         Home,
         PlayerCard,
-        LandMap,
+        Board,
         Tower,
         SiteFooter
     }
