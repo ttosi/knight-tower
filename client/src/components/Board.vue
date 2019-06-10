@@ -12,8 +12,7 @@
 
 <script>
 import Start from "@/components/Start.vue";
-import { constants } from "crypto";
-import { setTimeout } from 'timers';
+// import store from "@/state/store";
 
 export default {
   name: "board",
@@ -29,10 +28,14 @@ export default {
     rotateCC() {
       this.boardAngle -= 90;
       this.$refs['board'].style.transform = 'rotate(' + this.boardAngle + 'deg)';
+      this.$store.board.commit('increment');
+      console.log(this.$store.state.board.count);
     },
     rotateCCW() {
       this.boardAngle += 90;
       this.$refs['board'].style.transform = 'rotate(' + this.boardAngle + 'deg)';
+      this.$store.board.commit('decrement');
+      console.log(this.$store.state.board.count);
     }
   },
   mounted() {}
@@ -46,7 +49,6 @@ export default {
   top: -111%;
   width: 100%;
   height: 200%;
-  /* height: 850px; */
   margin: 0 auto;
   z-index: 5;
   background: url("../../public/map/map-main.png") no-repeat center;
@@ -63,7 +65,6 @@ export default {
   top: -17.5%;
   height: 20px;
   widows: 100%;
-  /* border: 1px solid red; */
   z-index: 6;
 }
 .cover-two {
@@ -72,7 +73,6 @@ export default {
   height: 23px;
   widows: 100%;
   background-color: #fff !important;
-  /* border: 1px solid red; */
   z-index: 7;
 }
 
