@@ -49,7 +49,7 @@ export default {
   /* height: 850px; */
   margin: 0 auto;
   z-index: 5;
-  background: url("../../public/map/map-base.png") no-repeat center;
+  background: url("../../public/map/map-main.png") no-repeat center;
   background-size: contain;
 }
 
